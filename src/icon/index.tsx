@@ -298,7 +298,7 @@ const Icon: React.FunctionComponent<propTypes> = (props: propTypes) => {
     <DivWrapper role="figure" onClick={onClick} className={iconClasses.join(' ')}>
       <IconWrapper theme={so}>
         {src && !Svg && <Img src={src} alt={alt} />}
-        {!src && Svg && <Svg fill={so.color} width={so.width} height={so.height} role="none" />}
+        {!src && Svg && <Svg color={so.color} width={so.width} height={so.height} role="none" />}
       </IconWrapper>
     </DivWrapper>
   );

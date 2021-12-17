@@ -4,7 +4,7 @@ import Icon from '../icon/index';
 import Acorn from '../assets/svg/acorn-duotone.svg';
 
 function App() {
-  return <Icon>{Acorn}</Icon>;
+  return <Icon width="2rem" height="2rem" color="red" motion="rubberBand 0.5s">{Acorn}</Icon>;
 }
 
 export default App;
