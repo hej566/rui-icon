@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IMG SVG render correctly 1`] = `
+<div
+  className="sc-bdvvtL jFcxMn"
+  onClick={[Function]}
+  role="figure"
+>
+  <i
+    className="sc-gsDKAQ kyKkyq"
+  >
+    <img
+      alt=""
+      className="sc-dkPtRN gvNhlX"
+      src="SvgrURL"
+    />
+  </i>
+</div>
+`;
+
+exports[`IMG SVG render correctly with height, width, color, motion, classname 1`] = `
+<div
+  className="sc-bdvvtL jFcxMn test class"
+  onClick={[Function]}
+  role="figure"
+>
+  <i
+    className="sc-gsDKAQ hZtRqH"
+  >
+    <img
+      alt="svg image"
+      className="sc-dkPtRN gvNhlX"
+      src="SvgrURL"
+    />
+  </i>
+</div>
+`;
+
+exports[`OBJ SVG render correctly 1`] = `
+<div
+  className="sc-bdvvtL jFcxMn"
+  onClick={[Function]}
+  role="figure"
+>
+  <i
+    className="sc-gsDKAQ kyKkyq"
+  >
+    
+    <svg
+      fill="currentColor"
+      height="1rem"
+      role="none"
+      width="1rem"
+    />
+  </i>
+</div>
+`;
+
+exports[`OBJ SVG render correctly with height, width, color, motion, classname 1`] = `
+<div
+  className="sc-bdvvtL jFcxMn test class"
+  onClick={[Function]}
+  role="figure"
+>
+  <i
+    className="sc-gsDKAQ hZtRqH"
+  >
+    
+    <svg
+      fill="blue"
+      height="2rem"
+      role="none"
+      width="2rem"
+    />
+  </i>
+</div>
+`;
