@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import styled from 'styled-components';
 
 const DivWrapper = styled.div`
@@ -66,19 +66,6 @@ const IconWrapper = styled.i`
   }
   @keyframes pulse {
     from {
-      transform: scale(1);
-    }
-
-    50% {
-      transform: scale(0.8);
-    }
-
-    to {
-      transform: scale(1.2);
-    }
-  }
-  @keyframes pulse {
-    from {
       transform: scale3d(1, 1, 1);
     }
 
@@ -139,10 +126,6 @@ const IconWrapper = styled.i`
     80% {
       transform: translate3d(10px, 0, 0);
     }
-  }
-
-  .shake {
-    animation-name: shake;
   }
   @keyframes swing {
     20% {

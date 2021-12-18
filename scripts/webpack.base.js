@@ -4,8 +4,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx|ts|tsx)$/,
-        exclude: [path.resolve(__dirname, '../node_modules')],
+        test: /\.(tsx)$/,
         use: [
           {
             loader: 'babel-loader',

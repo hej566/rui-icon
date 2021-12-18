@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { render, fireEvent, screen } from '@testing-library/react';
-import Icon from '../icon';
+import Icon from '../component';
 import Acorn1, { ReactComponent as Acorn2 } from '../assets/svg/acorn-duotone.svg';
 
 const propsForImgSvg = {
@@ -69,7 +69,11 @@ it('IMG props with height, width, color and motion', () => {
 
 test('IMG click event', () => {
   const clickHandler = jest.fn();
-  const IconComponent = <Icon {...propsForSvgObj} onClick={clickHandler}>{Acorn2}</Icon>;
+  const IconComponent = (
+    <Icon {...propsForSvgObj} onClick={clickHandler}>
+      {Acorn2}
+    </Icon>
+  );
   render(IconComponent);
   const element = screen.getByRole('figure');
   fireEvent.click(element);

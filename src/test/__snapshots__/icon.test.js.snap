@@ -7,7 +7,7 @@ exports[`IMG SVG render correctly 1`] = `
   role="figure"
 >
   <i
-    className="sc-gsDKAQ kyKkyq"
+    className="sc-gsDKAQ dheopE"
   >
     <img
       alt=""
@@ -25,7 +25,7 @@ exports[`IMG SVG render correctly with height, width, color, motion, classname 1
   role="figure"
 >
   <i
-    className="sc-gsDKAQ hZtRqH"
+    className="sc-gsDKAQ juJekd"
   >
     <img
       alt="svg image"
@@ -43,11 +43,11 @@ exports[`OBJ SVG render correctly 1`] = `
   role="figure"
 >
   <i
-    className="sc-gsDKAQ kyKkyq"
+    className="sc-gsDKAQ dheopE"
   >
     
     <svg
-      fill="currentColor"
+      color="currentColor"
       height="1rem"
       role="none"
       width="1rem"
@@ -63,11 +63,11 @@ exports[`OBJ SVG render correctly with height, width, color, motion, classname 1
   role="figure"
 >
   <i
-    className="sc-gsDKAQ hZtRqH"
+    className="sc-gsDKAQ juJekd"
   >
     
     <svg
-      fill="blue"
+      color="blue"
       height="2rem"
       role="none"
       width="2rem"
