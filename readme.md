@@ -18,13 +18,6 @@ Available props includes:
     width: string,
     height: string,
     color: string,
-    motion: string = one of ['rotate', 'bounce', 'fadeIn', 'fadeOut', 'pulse', 'rubberBand', 'shake', 'swing','tada','wobble','jello','heartBeat'] + durationTime
+    motion: string = one of ['rotate', 'bounce', 'fadeIn', 'fadeOut', 'pulse', 'rubberBand', 'shake', 'swing','tada','wobble','jello','heartBeat'] + cycleDuration
 }
 ```
-
-Example 
-
-```
-<Icon width="2rem" height="32px" color="red" motion="heartBeat 0.5s">{Svg}</Icon>
-```
-
