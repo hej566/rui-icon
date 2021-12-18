@@ -12,6 +12,8 @@ module.exports = {
     library: 'ui',
     libraryExport: 'default',
     libraryTarget: 'umd',
+    globalObject: 'this',
+    umdNamedDefine: true,
   },
   externals: {
     react: 'react',

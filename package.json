@@ -15,7 +15,7 @@
   },
   "prepublishOnly": "webpack --config  scripts/webpack.prod.js",
   "files": [
-    "./dist"
+    "dist"
   ],
   "keywords": [
     "ui",
