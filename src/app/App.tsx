@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import Icon from '../../dist';
 // @ts-ignore
 import Acorn from '../assets/svg/acorn-duotone.svg';

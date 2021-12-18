@@ -12,7 +12,6 @@ module.exports = {
     library: 'ui',
     libraryExport: 'default',
     libraryTarget: 'umd',
-    clean: true,
   },
   externals: {
     react: 'react',
