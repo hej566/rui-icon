@@ -260,7 +260,7 @@ const IconWrapper = styled.i`
       transform: scale(1);
     }
   }
-  animation: ${(props) => props.theme.motion} linear infinite;
+  animation: ${(props) => props.theme.motion};
   transform: translate3d(0, 0, 0);
 `;
 
