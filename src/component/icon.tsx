@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled from '@emotion/styled';
 
-const Figure = styled.figure`
+const Div = styled.div`
   display: inline-block;
 `;
 
@@ -272,12 +272,12 @@ const Icon: React.FunctionComponent<propTypes> = (props: propTypes) => {
   const { id, className, svg, src, alt, ...style } = props;
 
   return (
-    <Figure className={className} id={id}>
+    <Div className={className} id={id}>
       <IconWrapper {...style}>
         {src && !svg && <img src={src} alt={alt} />}
         {!src && svg && svg}
       </IconWrapper>
-    </Figure>
+    </Div>
   );
 };
 
