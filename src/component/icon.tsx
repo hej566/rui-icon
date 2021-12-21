@@ -1,13 +1,13 @@
 import * as React from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 
-const DivWrapper = styled.div`
+const Figure = styled.figure`
   display: inline-block;
 `;
 
-const IconWrapper = styled.i`
-  width: ${(props) => props.theme.width};
-  height: ${(props) => props.theme.height};
+const IconWrapper = styled.i<iconTypes>`
+  width: ${(props) => props.width};
+  height: ${(props) => props.height};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -260,37 +260,31 @@ const IconWrapper = styled.i`
       transform: scale(1);
     }
   }
-  animation: ${(props) => props.theme.motion};
+  animation: ${(props) => props.motion};
   transform: translate3d(0, 0, 0);
-`;
-
-const Img = styled.img`
-  width: ${(props) => props.theme.width};
-  height: ${(props) => props.theme.height};
+  & > img,
+  svg {
+    color: ${(props) => props.color};
+  }
 `;
 
 const Icon: React.FunctionComponent<propTypes> = (props: propTypes) => {
-  const { onClick, className, children, src, alt, ...style } = props;
-  const iconClasses: string[] = [];
-  const Svg = children || undefined;
-  if (className) iconClasses.push(className);
-
-  const so: { [key: string]: string } = { ...style };
+  const { id, className, svg, src, alt, ...style } = props;
 
   return (
-    <DivWrapper role="figure" onClick={onClick} className={iconClasses.join(' ')}>
-      <IconWrapper theme={so}>
-        {src && !Svg && <Img src={src} alt={alt} />}
-        {!src && Svg && <Svg color={so.color} width={so.width} height={so.height} role="none" />}
+    <Figure className={className} id={id}>
+      <IconWrapper {...style}>
+        {src && !svg && <img src={src} alt={alt} />}
+        {!src && svg && svg}
       </IconWrapper>
-    </DivWrapper>
+    </Figure>
   );
 };
 
 type propTypes = {
-  children?: React.FunctionComponent<React.SVGProps<SVGElement>>;
-  onClick?: React.MouseEventHandler<HTMLElement>;
+  svg?: React.ReactNode;
   className?: string;
+  id?: string;
   src?: string;
   alt?: string;
   width?: string;
@@ -299,16 +293,23 @@ type propTypes = {
   motion?: string;
 };
 
+type iconTypes = {
+  width?: string;
+  height?: string;
+  color?: string;
+  motion?: string;
+};
+
 Icon.defaultProps = {
-  onClick: () => {},
   className: '',
+  id: '',
   src: '',
   alt: '',
   width: '1rem',
   height: '1rem',
   color: 'currentColor',
   motion: '',
-  children: undefined,
+  svg: null,
 };
 
 export default React.memo(Icon);

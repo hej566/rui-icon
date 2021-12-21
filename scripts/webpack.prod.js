@@ -12,13 +12,12 @@ module.exports = {
     library: 'ui',
     libraryExport: 'default',
     libraryTarget: 'umd',
-    // globalObject: 'this',
-    // umdNamedDefine: true,
   },
   externals: {
     react: 'react',
     'react-dom': 'react-dom',
-    'styled-components': 'styled-components',
+    '@emotion/styled': '@emotion/styled',
+    '@emotion/react': '@emotion/react',
   },
   plugins: [
     new CleanWebpackPlugin({

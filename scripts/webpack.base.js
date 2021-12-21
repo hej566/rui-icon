@@ -21,10 +21,12 @@ module.exports = {
       },
       {
         test: /\.svg$/,
+        include: path.resolve(__dirname, '../src/assets/svg1'),
         use: ['@svgr/webpack'],
       },
       {
-        test: /\.(png|jpe?g|gif)$/i,
+        test: /\.svg$/,
+        include: path.resolve(__dirname, '../src/assets/svg2'),
         use: [
           {
             loader: 'file-loader',
