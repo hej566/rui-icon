@@ -263,7 +263,9 @@ const IconWrapper = styled.i<iconTypes>`
   animation: ${(props) => props.motion};
   transform: translate3d(0, 0, 0);
   & > img,
-  svg {
+  & > svg {
+    width: ${(props) => props.width};
+    height: ${(props) => props.height};
     color: ${(props) => props.color};
   }
 `;
